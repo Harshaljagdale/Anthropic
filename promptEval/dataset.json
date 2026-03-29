@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Create a JSON policy document that allows read-only access to a specific S3 bucket named 'company-data-backup'",
+    "format": "json",
+    "solution_criteria": "Must be valid IAM policy JSON with correct structure including Version, Statement array, Effect set to Allow, Action with s3:GetObject and s3:ListBucket, and Resource pointing to the specific bucket and its objects"
+  },
+  {
+    "task": "Write a Python function that extracts the AWS region from an S3 bucket URL (e.g., 'https://my-bucket.s3.us-west-2.amazonaws.com/file.txt' should return 'us-west-2')",
+    "format": "python",
+    "solution_criteria": "Function should correctly parse various S3 URL formats, handle edge cases like URLs without explicit regions (defaulting to us-east-1), return None for invalid URLs, and work with both path-style and virtual-hosted-style S3 URLs"
+  },
+  {
+    "task": "Create a regular expression pattern that validates AWS Lambda function names according to AWS naming rules",
+    "format": "regex",
+    "solution_criteria": "Regex must enforce AWS Lambda naming constraints: 1-64 characters long, contain only letters, numbers, hyphens, and underscores, cannot start or end with hyphen, and is case-sensitive"
+  }
+]

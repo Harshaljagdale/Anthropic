@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "",
+      "weight": "",
+      "goal": "",
+      "restrictions": ""
+    },
+    "solution_criteria": [
+      "System gracefully handles empty/undefined inputs without crashing",
+      "System requests clarification or provides helpful error message for missing required fields",
+      "System does not make assumptions or generate outputs based on missing data"
+    ],
+    "task_description": "",
+    "scenario": "Testing with empty or minimal input specification to verify graceful handling of undefined requirements"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "75 kg",
+      "goal": "build muscle and lose fat simultaneously while improving endurance",
+      "restrictions": "vegetarian, no soy, allergic to nuts, budget-conscious"
+    },
+    "solution_criteria": [
+      "Acknowledges the conflicting goals (muscle gain vs fat loss) and requests clarification on priority",
+      "Identifies ambiguity in 'budget-conscious' and asks for specific dietary budget constraints",
+      "Proposes a reasonable approach despite ambiguities or explicitly lists assumptions made",
+      "Addresses all four input parameters in the response"
+    ],
+    "task_description": "",
+    "scenario": "Testing with conflicting or ambiguous task descriptions to assess error handling and clarification requests"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "82",
+      "goal": "Build lean muscle mass while maintaining cardiovascular fitness",
+      "restrictions": "Lactose intolerant, no red meat, vegetarian protein sources only"
+    },
+    "solution_criteria": [
+      "Meal plan meets daily protein requirements (1.6-2.2g per kg bodyweight) using only vegetarian sources",
+      "Accommodates lactose intolerance by excluding dairy or suggesting alternatives",
+      "Includes macronutrient distribution appropriate for muscle-building with cardio (carbs 45-50%, protein 25-30%, fat 20-25%)",
+      "Avoids red meat while maintaining nutritional adequacy for stated fitness goals"
+    ],
+    "task_description": "",
+    "scenario": "Testing with highly specific domain-expert requirements (e.g., regulatory compliance, scientific methodology) to evaluate specialized knowledge application"
+  }
+]
